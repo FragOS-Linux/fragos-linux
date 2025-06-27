@@ -68,7 +68,7 @@ prepare() {
   done
 
   echo "Setting config..."
-  cp ../config .config
+  cp ../config-fragos .config
   make olddefconfig
   diff -u ../config .config || :
 
