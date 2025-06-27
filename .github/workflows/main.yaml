@@ -47,7 +47,7 @@ jobs:
           mkdir -p /etc/gnupg && echo "auto-key-retrieve" >> /etc/gnupg/gpg.conf
       - name: Install dependencies
         run: |
-          pacman -Syu --noconfirm bc cpio pahole python kmod clang llvd lld rust rust-bindgen rust-src graphviz imagemagick python-sphinx python-yaml texlive-latexextra
+          pacman -Syu --noconfirm bc cpio pahole python kmod clang llvm lld rust rust-bindgen rust-src graphviz imagemagick python-sphinx python-yaml texlive-latexextra
       - name: Build linux-fragos package
         id: build-kernel-package
         shell: bash
